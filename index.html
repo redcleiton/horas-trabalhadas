@@ -20,28 +20,29 @@ body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background
 .hidden{display:none!important}
 main{max-width:560px;margin:0 auto;padding:16px}
 section{display:none}section.on{display:block}
-.hero{background:var(--tinta);color:#fff;border-radius:18px;padding:16px;margin-bottom:16px}
-.dn{display:flex;align-items:center;justify-content:space-between;gap:8px}
-.seta{width:48px;height:48px;border-radius:12px;border:1px solid #ffffff44;background:none;color:#fff;font-size:1.5rem}
-#h-data{flex:1;text-align:center;font-weight:700;font-size:1.05rem;text-transform:capitalize}
-#h-voltar{display:block;margin:8px auto 0;background:none;border:0;color:var(--verde);font-size:.95rem;padding:8px}
-.grande{width:100%;min-height:76px;margin-top:14px;border:0;border-radius:16px;background:var(--verde);color:#04261d;font-size:1.2rem;font-weight:800}
-.grande:active{transform:scale(.98)}
-#h-res{margin:14px 2px 0;font-size:.95rem;color:#cfdbe8}
-#h-res b{color:#fff}
+.hero{background:var(--tinta);color:#fff;border-radius:18px;padding:14px;margin-bottom:16px}
+.dn{display:flex;align-items:center;gap:8px}
+.seta{flex:0 0 52px;height:52px;border-radius:12px;border:1px solid #ffffff44;background:none;color:#fff;font-size:1.6rem}
+#data{flex:1;min-width:0;height:52px;padding:0 8px;text-align:center;font-size:1.1rem;font-weight:700;background:transparent;color:#fff;border:1px solid #ffffff44;border-radius:12px;color-scheme:dark}
+#h-sem{margin:10px 2px 0;text-align:center;text-transform:capitalize;color:#cfdbe8}
+#h-hoje{display:block;margin:6px auto 0;background:none;border:0;color:var(--verde);font-size:.95rem;padding:8px}
+#h-res{margin:8px 2px 0;font-size:1rem;text-align:center;color:#cfdbe8}
+#h-res b{color:#fff}#h-res .av{color:#ffd37a}
 .card{background:var(--card);border:1px solid var(--linha);border-radius:14px;padding:16px;margin-bottom:16px}
 h2{font-size:1.05rem;margin:0 0 8px}
-.slot{display:flex;align-items:center;gap:8px;padding:10px 0;border-bottom:1px solid var(--linha)}
-.slot label{flex:1;font-size:.95rem}
-.slot input{width:132px;padding:12px 8px;font-size:1.15rem;text-align:center}
-.x{width:44px;height:44px;border:0;background:none;color:var(--mut);font-size:1.5rem;border-radius:10px}
-label.f{display:block;font-size:.85rem;color:var(--mut);margin:14px 0 4px}
-input{width:100%;padding:13px;font-size:1rem;border:1px solid var(--linha);border-radius:10px;background:#fff;color:var(--tinta)}
-input:focus,button:focus-visible{outline:3px solid var(--verde);outline-offset:1px}
-.chk{display:flex;gap:12px;align-items:center;padding:14px 0 4px;font-size:1rem}
+.grid4{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid4 label{display:block;font-size:.85rem;color:var(--mut);margin-bottom:4px}
+.hora{width:100%;padding:16px 6px;font-size:1.8rem;text-align:center;font-variant-numeric:tabular-nums;letter-spacing:1px;border:2px solid var(--linha);border-radius:12px;background:#fff;color:var(--tinta)}
+.hora:focus{border-color:var(--verde);outline:0}
+label.f{display:block;font-size:.85rem;color:var(--mut);margin:12px 0 4px}
+input.n{width:100%;padding:13px;font-size:1rem;border:1px solid var(--linha);border-radius:10px;background:#fff;color:var(--tinta)}
+input.n:focus,button:focus-visible{outline:3px solid var(--verde);outline-offset:1px}
+.chk{display:flex;gap:12px;align-items:center;padding:16px 0 0;font-size:1rem}
 .chk input{width:24px;height:24px}
-.btn{width:100%;min-height:52px;margin-top:16px;font-size:1rem;font-weight:700;border:0;border-radius:12px;background:var(--tinta);color:#fff}
-.btn.sec{background:#fff;color:var(--neg);border:1px solid var(--neg);margin-top:10px}
+.btn{width:100%;min-height:56px;margin-top:16px;font-size:1.1rem;font-weight:700;border:0;border-radius:12px;background:var(--tinta);color:#fff}
+.btn.v{background:var(--verde);color:#04261d}
+.btn.sec{background:#fff;color:var(--neg);border:1px solid var(--neg);margin-top:10px;min-height:48px;font-size:1rem}
+.btn:active{transform:scale(.98)}
 .grade{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
 .k{background:var(--card);border:1px solid var(--linha);border-radius:14px;padding:12px}
 .k small{display:block;color:var(--mut);font-size:.8rem}
@@ -49,9 +50,10 @@ input:focus,button:focus-visible{outline:3px solid var(--verde);outline-offset:1
 .k.gr{grid-column:1/-1;background:var(--tinta);color:#fff;border-color:var(--tinta)}
 .k.gr small{color:#a9bbcc}.k.gr b{font-size:1.9rem;color:var(--verde)}
 .pos{color:var(--pos)}.neg{color:var(--neg)}
-.item{display:flex;justify-content:space-between;gap:10px;align-items:center;min-height:56px;padding:10px 0;border:0;border-bottom:1px solid var(--linha);width:100%;background:none;text-align:left;color:var(--tinta);font-size:.95rem}
+.item{display:flex;justify-content:space-between;gap:10px;align-items:center;min-height:58px;padding:8px 0;border:0;border-bottom:1px solid var(--linha);width:100%;background:none;text-align:left;color:var(--tinta);font-size:.95rem}
 .item:last-child{border-bottom:0}
 .item small{display:block;color:var(--mut)}
+.item.vazio{color:var(--mut)}
 .mut{color:var(--mut);font-size:.85rem}
 nav{position:fixed;left:0;right:0;bottom:0;display:flex;background:#fff;border-top:1px solid var(--linha);padding-bottom:env(safe-area-inset-bottom,0);z-index:5}
 nav button{flex:1;min-height:60px;background:none;border:0;color:var(--mut);font-size:.95rem;font-weight:600;border-top:3px solid transparent}
@@ -66,12 +68,12 @@ nav button.on{color:var(--tinta);border-top-color:var(--verde)}
 <div id="login" class="hidden">
   <div class="card">
     <h1 style="margin:0 0 4px;font-size:1.5rem">Banco de Horas</h1>
-    <p class="mut" style="margin:0 0 8px">Entre para registrar seu ponto.</p>
+    <p class="mut" style="margin:0 0 8px">Entre para lançar seu ponto.</p>
     <form onsubmit="entrar(event)">
       <label class="f" for="email">E-mail</label>
-      <input id="email" type="email" autocomplete="username" required>
+      <input class="n" id="email" type="email" autocomplete="username" required>
       <label class="f" for="senha">Senha</label>
-      <input id="senha" type="password" autocomplete="current-password" required>
+      <input class="n" id="senha" type="password" autocomplete="current-password" required>
       <button class="btn" type="submit">Entrar</button>
     </form>
   </div>
@@ -84,23 +86,29 @@ nav button.on{color:var(--tinta);border-top-color:var(--verde)}
       <div class="hero">
         <div class="dn">
           <button class="seta" aria-label="Dia anterior" onclick="mudaDia(-1)">‹</button>
-          <div id="h-data"></div>
+          <input id="data" type="date" onchange="trocaData(this.value)">
           <button class="seta" aria-label="Próximo dia" onclick="mudaDia(1)">›</button>
         </div>
-        <button id="h-voltar" onclick="irHoje()">Voltar para hoje</button>
-        <button id="bater" class="grande" onclick="bater()"></button>
+        <div id="h-sem"></div>
+        <button id="h-hoje" class="hidden" onclick="trocaData(hoje())">Ir para hoje</button>
         <p id="h-res"></p>
       </div>
       <div class="card">
-        <h2>Horários do dia</h2>
-        <div id="slots"></div>
-        <label class="chk"><input id="feriado" type="checkbox" onchange="gravar({feriado:this.checked})"> Domingo ou feriado</label>
+        <div class="grid4">
+          <div><label for="c-entrada">Entrada</label><input class="hora" id="c-entrada" type="text" inputmode="numeric" maxlength="5" placeholder="--:--" autocomplete="off" oninput="mascara(this)"></div>
+          <div><label for="c-saida_intervalo">Saída intervalo</label><input class="hora" id="c-saida_intervalo" type="text" inputmode="numeric" maxlength="5" placeholder="--:--" autocomplete="off" oninput="mascara(this)"></div>
+          <div><label for="c-volta_intervalo">Volta intervalo</label><input class="hora" id="c-volta_intervalo" type="text" inputmode="numeric" maxlength="5" placeholder="--:--" autocomplete="off" oninput="mascara(this)"></div>
+          <div><label for="c-saida">Saída</label><input class="hora" id="c-saida" type="text" inputmode="numeric" maxlength="5" placeholder="--:--" autocomplete="off" oninput="mascara(this)"></div>
+        </div>
+        <label class="chk"><input id="feriado" type="checkbox" onchange="live()"> Domingo ou feriado</label>
+        <button class="btn v" onclick="salvar()">Salvar dia</button>
         <button id="apagar" class="btn sec hidden" onclick="apagar()">Apagar este dia</button>
+        <p class="mut" style="margin:12px 0 0">Digite só os números (0745 vira 07:45). Ao completar um horário, o cursor pula para o próximo.</p>
       </div>
     </section>
 
     <section id="mes">
-      <div class="card"><label class="f" for="mesSel" style="margin-top:0">Mês</label><input id="mesSel" type="month" onchange="renderMes()"></div>
+      <div class="card"><label class="f" for="mesSel" style="margin-top:0">Mês</label><input class="n" id="mesSel" type="month" onchange="renderMes()"></div>
       <div class="grade">
         <div class="k"><small>Horas trabalhadas</small><b id="r-trab"></b></div>
         <div class="k"><small>Saldo do mês</small><b id="r-saldo"></b></div>
@@ -108,7 +116,7 @@ nav button.on{color:var(--tinta);border-top-color:var(--verde)}
         <div class="k"><small>Dias registrados</small><b id="r-dias"></b></div>
         <div class="k gr"><small>Extras a receber no mês (estimativa bruta)</small><b id="r-valor"></b></div>
       </div>
-      <div class="card"><h2>Dias do mês</h2><div id="lista"></div></div>
+      <div class="card"><h2>Dias do mês</h2><p class="mut" style="margin:0 0 6px">Toque em um dia para lançar ou corrigir.</p><div id="lista"></div></div>
     </section>
 
     <section id="ajustes">
@@ -116,15 +124,15 @@ nav button.on{color:var(--tinta);border-top-color:var(--verde)}
         <h2>Seus dados de cálculo</h2>
         <form onsubmit="salvarCfg(event)">
           <label class="f" for="c-sal">Salário mensal (R$)</label>
-          <input id="c-sal" type="number" min="0" step="0.01" inputmode="decimal">
+          <input class="n" id="c-sal" type="number" min="0" step="0.01" inputmode="decimal">
           <label class="f" for="c-jor">Jornada diária (horas, sem contar o intervalo)</label>
-          <input id="c-jor" type="time" value="08:00">
+          <input class="n" id="c-jor" type="time" value="08:00">
           <label class="f" for="c-pct">Adicional da hora extra (%)</label>
-          <input id="c-pct" type="number" min="0" value="50" inputmode="numeric">
+          <input class="n" id="c-pct" type="number" min="0" value="50" inputmode="numeric">
           <label class="f" for="c-pctf">Adicional em domingo ou feriado (%)</label>
-          <input id="c-pctf" type="number" min="0" value="100" inputmode="numeric">
+          <input class="n" id="c-pctf" type="number" min="0" value="100" inputmode="numeric">
           <label class="f" for="c-div">Divisor para o valor da hora (horas por mês)</label>
-          <input id="c-div" type="number" min="1" value="220" inputmode="numeric">
+          <input class="n" id="c-div" type="number" min="1" value="220" inputmode="numeric">
           <button class="btn" type="submit">Salvar ajustes</button>
         </form>
         <p class="mut">O valor da hora é o salário dividido pelo divisor. O resultado é uma estimativa bruta: não inclui descontos, reflexos nem regras do acordo da sua empresa.</p>
@@ -134,7 +142,7 @@ nav button.on{color:var(--tinta);border-top-color:var(--verde)}
 
   </main>
   <nav>
-    <button class="on" data-t="hoje">Hoje</button>
+    <button class="on" data-t="hoje">Lançar</button>
     <button data-t="mes">Mês</button>
     <button data-t="ajustes">Ajustes</button>
   </nav>
@@ -143,16 +151,11 @@ nav button.on{color:var(--tinta);border-top-color:var(--verde)}
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
 <script>
-const SUPABASE_URL = 'https://vflstqvrbmewhfkuhlmu.supabase.co';
-const SUPABASE_KEY = 'sb_publishable_wYAcaBLlkKUovaqtV-K14g_reHQc9sa';
+const SUPABASE_URL = 'https://lesuezfxmxvjqyueaxno.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_q8nZUz3a6iJg3ZCztYjMKg_Enuqnh8W';
 const db = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 const $ = id => document.getElementById(id);
-const SLOTS = [
-  ['entrada', 'Entrada', 'a entrada'],
-  ['saida_intervalo', 'Saída para o intervalo', 'a saída para o intervalo'],
-  ['volta_intervalo', 'Volta do intervalo', 'a volta do intervalo'],
-  ['saida', 'Saída', 'a saída']
-];
+const CAMPOS = ['entrada', 'saida_intervalo', 'volta_intervalo', 'saida'];
 let uid = null, regs = [];
 let cfg = { salario: 0, jornada_min: 480, extra_pct: 50, extra_feriado_pct: 100, divisor: 220 };
 
@@ -163,6 +166,7 @@ let dia = hoje();
 const brl = n => Number(n || 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 const toMin = t => { if (!t) return null; const p = t.split(':'); return +p[0] * 60 + +p[1]; };
 const hhmm = t => t ? t.slice(0, 5) : '';
+const horaOk = v => /^([01]\d|2[0-3]):[0-5]\d$/.test(v);
 const minParaHora = m => { m = ((Math.round(m) % 1440) + 1440) % 1440; return pad(Math.floor(m / 60)) + ':' + pad(m % 60); };
 function fmtH(min) { const s = min < 0 ? '-' : ''; const a = Math.abs(Math.round(min)); return s + Math.floor(a / 60) + 'h' + pad(a % 60); }
 const sinal = min => (min > 0 ? '+' : '') + fmtH(min);
@@ -231,59 +235,75 @@ async function carregar() {
   renderHoje(); renderMes();
 }
 
-const reg = () => regs.find(r => r.data === dia) || { data: dia, feriado: false };
-
-function mudaDia(n) { const d = new Date(dia + 'T12:00:00'); d.setDate(d.getDate() + n); dia = iso(d); renderHoje(); }
-function irHoje() { dia = hoje(); renderHoje(); }
+const reg = () => regs.find(r => r.data === dia);
+function trocaData(v) { if (!v) return; dia = v; renderHoje(); }
+function mudaDia(n) { const d = new Date(dia + 'T12:00:00'); d.setDate(d.getDate() + n); trocaData(iso(d)); }
 
 function renderHoje() {
   const r = reg();
-  $('h-data').textContent = new Date(dia + 'T12:00:00').toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' });
-  $('h-voltar').classList.toggle('hidden', dia === hoje());
-  const prox = SLOTS.find(s => !r[s[0]]);
-  $('bater').classList.toggle('hidden', dia !== hoje() || !prox);
-  if (prox) $('bater').textContent = 'Registrar ' + prox[2];
-  $('slots').innerHTML = SLOTS.map(s => `<div class="slot"><label for="s-${s[0]}">${s[1]}</label><input id="s-${s[0]}" type="time" value="${hhmm(r[s[0]])}" onchange="setSlot('${s[0]}',this.value)"><button class="x" aria-label="Limpar ${s[1]}" onclick="setSlot('${s[0]}','')">×</button></div>`).join('');
-  $('feriado').checked = !!r.feriado;
-  $('apagar').classList.toggle('hidden', !regs.some(x => x.data === dia));
-  resumoDia(r);
+  $('data').value = dia;
+  $('h-hoje').classList.toggle('hidden', dia === hoje());
+  CAMPOS.forEach(c => { $('c-' + c).value = r ? hhmm(r[c]) : ''; });
+  $('feriado').checked = r ? !!r.feriado : false;
+  $('apagar').classList.toggle('hidden', !r);
+  live(r ? 'Registro salvo' : 'Sem registro neste dia');
 }
 
-function resumoDia(r) {
-  const el = $('h-res'), t = trabalhados(r);
+function formVals() {
+  const v = {};
+  CAMPOS.forEach(c => { v[c] = $('c-' + c).value.trim() || null; });
+  v.feriado = $('feriado').checked;
+  return v;
+}
+function foraDeOrdem(v) {
+  const ms = CAMPOS.map(c => v[c] && horaOk(v[c]) ? toMin(v[c]) : null).filter(x => x != null);
+  return ms.some((x, i) => i > 0 && x < ms[i - 1]);
+}
+
+function live(status) {
+  const v = formVals();
+  const d = new Date(dia + 'T12:00:00').toLocaleDateString('pt-BR', { weekday: 'long' });
+  if (typeof status === 'string') live.st = status;
+  $('h-sem').textContent = d + (live.st ? ' · ' + live.st : '');
+  const el = $('h-res');
+  if (CAMPOS.some(c => v[c] && !horaOk(v[c]) && v[c].length === 5)) { el.innerHTML = '<span class="av">Horário inválido</span>'; return; }
+  if (foraDeOrdem(v)) { el.innerHTML = '<span class="av">Confira a ordem dos horários</span>'; return; }
+  const t = trabalhados(v);
   if (t != null) {
-    const s = r.feriado ? t : t - cfg.jornada_min;
+    const s = v.feriado ? t : t - cfg.jornada_min;
     el.innerHTML = `Trabalhado <b>${fmtH(t)}</b> · saldo do dia <b>${sinal(s)}</b>`;
     return;
   }
-  const e = toMin(r.entrada), si = toMin(r.saida_intervalo), vi = toMin(r.volta_intervalo);
-  if (e != null && si != null && vi != null && !r.saida && !r.feriado) {
+  const e = toMin(v.entrada), si = toMin(v.saida_intervalo), vi = toMin(v.volta_intervalo);
+  if ([v.entrada, v.saida_intervalo, v.volta_intervalo].every(x => x && horaOk(x)) && !v.saida && !v.feriado) {
     el.innerHTML = `Para cumprir a jornada, saia às <b>${minParaHora(vi + cfg.jornada_min - (si - e))}</b>`;
     return;
   }
-  el.textContent = 'Toque no botão para registrar o horário agora.';
+  el.textContent = 'Digite os horários do comprovante.';
 }
 
-async function gravar(campos) {
-  const a = reg();
-  const row = Object.assign({
-    user_id: uid, data: dia,
-    entrada: a.entrada || null, saida_intervalo: a.saida_intervalo || null,
-    volta_intervalo: a.volta_intervalo || null, saida: a.saida || null, feriado: !!a.feriado
-  }, campos);
-  const { data, error } = await db.from('registros_ponto').upsert(row, { onConflict: 'user_id,data' }).select().single();
-  if (error) { toast(error.message, true); return false; }
-  regs = regs.filter(x => x.data !== dia).concat(data).sort((x, y) => y.data.localeCompare(x.data));
-  renderHoje(); renderMes();
-  return true;
+function mascara(el) {
+  let d = el.value.replace(/\D/g, '').slice(0, 4);
+  el.value = d.length >= 3 ? d.slice(0, 2) + ':' + d.slice(2) : d;
+  if (el.value.length === 5) {
+    const i = CAMPOS.indexOf(el.id.slice(2));
+    if (i < CAMPOS.length - 1) $('c-' + CAMPOS[i + 1]).focus(); else el.blur();
+  }
+  live();
 }
-const setSlot = (k, v) => gravar({ [k]: v || null });
 
-async function bater() {
-  const prox = SLOTS.find(s => !reg()[s[0]]);
-  if (!prox) return;
-  const d = new Date(), h = pad(d.getHours()) + ':' + pad(d.getMinutes());
-  if (await gravar({ [prox[0]]: h })) { toast('Registrado às ' + h); if (navigator.vibrate) navigator.vibrate(40); }
+async function salvar() {
+  const v = formVals();
+  for (const c of CAMPOS) if (v[c] && !horaOk(v[c])) return toast('Horário inválido: ' + v[c], true);
+  if (!CAMPOS.some(c => v[c])) return toast('Digite ao menos um horário', true);
+  if (foraDeOrdem(v) && !confirm('Os horários parecem fora de ordem. Salvar mesmo assim?')) return;
+  const { data, error } = await db.from('registros_ponto').upsert(Object.assign({ user_id: uid, data: dia }, v), { onConflict: 'user_id,data' }).select().single();
+  if (error) return toast(error.message, true);
+  regs = regs.filter(x => x.data !== dia).concat(data).sort((a, b) => b.data.localeCompare(a.data));
+  renderMes();
+  if (dia < hoje()) { toast('Dia salvo. Próximo dia'); mudaDia(1); }
+  else { toast('Dia salvo'); renderHoje(); }
+  if (navigator.vibrate) navigator.vibrate(40);
 }
 
 async function apagar() {
@@ -315,14 +335,21 @@ function renderMes() {
   $('r-acum').textContent = sinal(a.saldo); $('r-acum').className = cor(a.saldo);
   $('r-dias').textContent = m.dias;
   $('r-valor').textContent = cfg.salario ? brl(valorExtra(m)) : 'Informe o salário em Ajustes';
-  $('lista').innerHTML = rows.map(r => {
+  const [ano, mm] = mes.split('-').map(Number);
+  const ultimo = mes === hoje().slice(0, 7) ? new Date().getDate() : new Date(ano, mm, 0).getDate();
+  let html = '';
+  for (let d = ultimo; d >= 1; d--) {
+    const ds = mes + '-' + pad(d);
+    const r = regs.find(x => x.data === ds);
+    const rot = new Date(ds + 'T12:00:00').toLocaleDateString('pt-BR', { weekday: 'short', day: '2-digit', month: '2-digit' });
+    if (!r) { html += `<button class="item vazio" onclick="editar('${ds}')"><span>${rot}</span><span>sem registro</span></button>`; continue; }
     const t = trabalhados(r);
-    const rot = new Date(r.data + 'T12:00:00').toLocaleDateString('pt-BR', { weekday: 'short', day: '2-digit', month: '2-digit' }) + (r.feriado ? ' (dom/fer)' : '');
     const s = t == null ? null : (r.feriado ? t : t - cfg.jornada_min);
     const ex = s == null ? '<span class="mut">incompleto</span>' : `<b class="${cor(s)}">${sinal(s)}</b>`;
-    const hs = [r.entrada, r.saida_intervalo, r.volta_intervalo, r.saida].map(hhmm).map(x => x || '--:--').join(' · ');
-    return `<button class="item" onclick="editar('${r.data}')"><span>${rot}<small>${hs}${t != null ? ' · ' + fmtH(t) : ''}</small></span>${ex}</button>`;
-  }).join('') || '<p class="mut">Nenhum dia registrado neste mês.</p>';
+    const hs = CAMPOS.map(c => hhmm(r[c]) || '--:--').join(' · ');
+    html += `<button class="item" onclick="editar('${ds}')"><span>${rot}${r.feriado ? ' (dom/fer)' : ''}<small>${hs}${t != null ? ' · ' + fmtH(t) : ''}</small></span>${ex}</button>`;
+  }
+  $('lista').innerHTML = html || '<p class="mut">Nenhum dia neste mês.</p>';
 }
 function editar(d) { dia = d; renderHoje(); aba('hoje'); }
 
